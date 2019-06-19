@@ -1,134 +1,63 @@
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>login</title>
-    <style>
-    @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
-    @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
-
-    .body{
-    	position: fixed;
-    	pverflow-y: scroll
-    	width: 100%
-    	top: -20px;
-    	right: -40px;
-    	bottom: -40px;
-    	width: auto;
-    	height: auto;
-    	background-image: url(http://besttours.com/media/catalog/category/NYC_2-compressor.jpg);
-        background-size: cover;
-        -webkit-filter: blur(0px);
-    }
-    .head{
-    	position: absolute;
-    	top:calc(50%-35px);
-    	left:calc(50%-255px);
-    }
-    .header div{
-     float: left;
-     color: #fff;
-     font-family: 'Exo', sans-serif;
-     font-size: 40px;
-     font-weight: 200;
-    }
-    .header div span{
-    	color: #F29E20 !important;
-    }
-    .login{
-    	position: absolute;
-    	top: calc(50% - 75px);
-    	left: calc(50% - 50px);
-    	height: 150px;
-    	width: 350px;
-    	padding:10px;
-    }
-    .login input [type=text]{
-    	width: 250px;
-    	height: 30px;
-    	background: transparent;
-    	border: 1px solid rgba(255,255,255,0.6);
-    	border-radius: 2px;
-    	color: #fff;
-    	font-family: 'Exo', sans-serif;
-    	font-size: 16px;
-    	font-weight: 400;
-    	padding: 4px;
-    }
-    .login input [type=password]{
-    	width: 250px;
-    	height: 30px;
-    	background: transparent;
-    	border: 1px solid rgba(255,255,255,0.6);
-    	border-radius: 2px;
-    	color: #fff;
-    	font-family: 'Exo', sans-serif;
-    	font-size: 16px;
-    	font-weight: 400;
-    	padding: 4px;
-    }
-    .login input [type=button]{
-    	width: 260px;
-    	height: 35px;
-    	background: #fff;
-    	border: 1px solid #fff;
-    	cursor: pointer;
-    	border-radius: 2px;
-    	color: #a18d6c;
-    	font-family: 'Exo', sans-serif;
-    	font-size:16px;
-    	font-weight:400;
-    	padding:4px;
-    }
-    .login input [type=button]:hover{
-    	opacity: 0.8;
-    }
-    .login input [type=button]:active{
-    	opacity: 0.6;
-    }
-    .login input [type=text]:focus{
-    	outline: none;
-    	border:1px solid rgba (255,255,255,0.9);
-    }
-    .login input [type=password]:focus{
-    	outline: none;
-    	border: 1px solid rgba(255,255,255,0.9);
-    }
-    .login input [type=button]:focus{
-    	outline: none;
-    }
-    ::-webkit-input-placeholder{
-    	color: rgba(255,255,255,0.6);
-    ::-moz-input-placeholder{
-    	color: rgba(255,255,255,0.6);
-</style>
+<title>This is my CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 </head>
-<body oncontextmenu="return false">
-	<div class="body"></div>
-	<div class="grad"></div>
-	<div class="header">
-    <div><span>Hello Everyone</span></div>
-
+<body>
+	<div class="profile-img">
+		<img src="user.jpg">
 	</div>
-	<br>
-	<form name="login">
-	<div class="login">
-		<input type="text" placeholder="username" name="userid"><br>
-		<input type="password" placeholder="password" name="pswrd"><br>
-        <input type="button" onclick="check(this.form)" value="Login"/></div>
-    </form>
+	<div class="profile-info">
+	<h1>Can Hoang Linh</h1>
+	<p class= "about"> I'm a student of computer science at the Bach Khoa university</p>
+	<div class="social-media">
+		<span><img src="fb.png">https://www.facebook.com/can.hoanglinh</span>
+		<br><span><img src="twitter.png">https://twitter.com/LifeOfLinhh </span></br>
+		<span><img src="skype.jpg">canhoanglinh98</span>
+    </div>
+    <h2>Expertise</h2>
+    <div class="expertise">
+    	<img src="cs.jpg">
 
-    <script language="javascript">
-    	function check(form)
-    	{
-    		if(form.userid.value == "canhoanglinh" && form.pswrd.value=="070898")
-    		{
-    			location.href=("index.html");
-    		}
-    		else
-    		{
-    			alert("The username and password you entered don't match")
-    		}
-    	}
-    </script>
+    	<p><b>IT-Computer Science (CSS,CPP,Python,Java)</b></p>
+    	<small>
+        Computer science is the study of processes that interact with data and that can be represented as data in the form of programs. It enables the use of algorithms to manipulate, store, and communicate digital information.
+    	</small>
+</div>
+<div class="expertise">
+    	<img src="web.png">
+    	<p><b>Web design</b></p>
+    	<small>
+        designing effective web pages; implementing web pages by writing HTML and CSS code; enhancing web pages with the use of page layout techniques, text formatting, graphics, images, and multimedia; and producing a functional, multi-page website.
+    	</small>
+</div>	
+<h2>My Projet Work</h2>
+<div class="projects">
+<img src="1.png">
+<img src="2.jpg">
+<img src="3.jpg">
+</div>
+<div class="form-box">
+	<h2>Contact me</h2>
+	<form>
+		<div class="input-group">
+		<input type="text" placeholder="First Name">
+		<input type="text" placeholder="Last Name">
+	</div>
+	<div class="input-group">
+		<input type="number" placeholder="Phone Number">
+		<input type="email" placeholder="Last Name">
+	</div>
+	<div class="text-area">
+		<textarea rows="4" placeholder="Your Message"></textarea>
+	</div>
+	<button type="submit" class="submit-btn">SEND MESSAGE</button>
+	</form>
+	</div>
+	<div class="contact">
+		<span><img src="gmail.jpg">linh.can@vexere.com</span>
+		<span><img src="phone.jpg">0903844969</span>
+	</div>
 </body>
-</html>	
+</html>

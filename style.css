@@ -4,9 +4,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body
+.body
 {
-	background: #efefef;
+	background: #040404;
 	font_family: sans-serif;
 }
 .profile-img{
